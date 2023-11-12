@@ -1,0 +1,40 @@
+1. Objective:
+   - Build a text classification model to identify harmful or offensive content in social media comments.
+
+2. Dataset:
+   - Data stored in an Excel file ('your_dataset.xlsx').
+
+3. Preprocessing:
+   - Remove HTML tags, extract emoticons, convert text to lowercase, and combine emoticons back into the text.
+
+4. Tokenization and Vectorization:
+   - Tokenize text using stemming and remove English stopwords.
+   - Use HashingVectorizer for vectorization.
+
+5. Model:
+   - Train a Stochastic Gradient Descent (SGD) classifier with logistic loss.
+
+6. Training:
+   - Split the dataset into training and testing sets.
+   - Train the model using the partial fit method for incremental learning.
+
+7. Evaluation:
+   - Print accuracy on the test set.
+
+8. Inference:
+   - Use the trained model for predictions on new examples in both English and Bengali.
+   - Output the predicted class and probability.
+
+9. Project Structure:
+   - Organized into directories: data, models, src, notebooks.
+   - Notebooks for exploratory data analysis, model training, and inference.
+
+10. Dependencies:
+    - NumPy, Pandas, Scikit-learn, TQDM, NLTK.
+
+11. Model Persistence:
+    - Save the trained model as 'trained_model.pkl'.
+
+12. Usage:
+    - Set up dependencies using 'requirements.txt'.
+    - Explore data, train the model, and make predictions using Jupyter notebooks.
